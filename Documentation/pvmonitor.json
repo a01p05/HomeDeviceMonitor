@@ -1,0 +1,333 @@
+{
+  "info": {
+    "api": 1,
+    "hst": "pvmterminal.local",
+    "myip": "192.168.1.7",
+    "pvsno": "01C902C2",
+    "pvver": "1.31+",
+    "pvmmi": "12088",
+    "pvme": "83440",
+    "pvrst": "3",
+    "pvstrt": "2024-03-06 14:05:40",
+    "pvrnt": "08d 07:05:33",
+    "s_bh1750": "0",
+    "s_bmp180t": "3.10",
+    "s_bmp180p": "98578",
+    "s_si7021t": "0.00",
+    "s_si7021h": "0"
+  },
+  "rs485": {
+    "emetersread": [
+      {
+        "emtp": "7",
+        "ematv": "1",
+        "emerr": "100",
+        "emtm": "1710436369",
+        "emtbl": "#emtbfw",
+        "emphs": "3",
+        "em_#": "0",
+        "em_Adres": "1",
+        "em_Nazwa": "sofar1",
+        "em_Typ": "Sofar KTL-X",
+        "em_Czas odczytu": "18:12:49",
+        "em_Status": "100",
+        "em_Błędy": "546",
+        "em_StatusFW": "0002",
+        "em_P gen": "0",
+        "em_P DC1": "0",
+        "em_P DC2": "0",
+        "em_En gen": "8351.000",
+        "em_En day gen": "9.950",
+        "em_V DC1": "164.1",
+        "em_V DC2": "157.8",
+        "em_I DC1": "0.00",
+        "em_I DC2": "0.00",
+        "em_En DC1": "0.0",
+        "em_En day DC1": "0.00",
+        "em_En DC2": "0.0",
+        "em_En day DC2": "0.00",
+        "em_V L1": "228.0",
+        "em_V L2": "221.6",
+        "em_V L3": "231.1",
+        "em_I L1": "0.90",
+        "em_I L2": "0.91",
+        "em_I L3": "0.90",
+        "em_Tm [h]": "8167",
+        "em_TmD [min]": "643",
+        "em_Temp": "24.0",
+        "em_Temp in": "41.0",
+        "em_PF": "0.00"
+      },
+      {
+        "emtp": "2",
+        "ematv": "1",
+        "emerr": "0",
+        "emtm": "1710447055",
+        "emtbl": "#emtbme",
+        "emphs": "3",
+        "em_#": "1",
+        "em_Adres": "3",
+        "em_Nazwa": "Licznik Gl",
+        "em_Typ": "SDM630",
+        "em_Czas odczytu": "21:10:55",
+        "em_Status": "OK",
+        "em_Błędy": "0",
+        "em_P": "6715.3",
+        "em_P L1": "1505.7",
+        "em_P L2": "3345.7",
+        "em_P L3": "1863.9",
+        "em_V L1": "223.3",
+        "em_V L2": "219.8",
+        "em_V L3": "223.5",
+        "em_I L1": "6.88",
+        "em_I L2": "15.60",
+        "em_I L3": "8.44",
+        "em_P-R L1": "124.7",
+        "em_P-R L2": "526.9",
+        "em_P-R L3": "25.0",
+        "em_P imp": "6715.3",
+        "em_P exp": "0.0",
+        "em_Imp kWh": "16126.849",
+        "em_Exp kWh": "4565.139",
+        "em_Tot kWh": "20691.957",
+        "em_ImpR kvar": "957.379",
+        "em_ExpR kvar": "7584.000",
+        "em_TotR kvar": "0.000"
+      }
+    ]
+  },
+  "pulse": {
+    "empulseread": [
+      {
+        "em_#": "0",
+        "em_Nazwa": "PC Panasonic T-CAP 9kW",
+        "em_Czas odczytu": "21:11:12",
+        "em_Impulsy": "7627162",
+        "em_P": "4135",
+        "em_kWh": "9522.261"
+      }
+    ]
+  },
+  "sum": {
+    "emsumread": [
+      {
+        "em_Nazwa": "Suma poboru",
+        "em_Czas odczytu": "21:10:55",
+        "em_P": "4135",
+        "em_kWh": "9454.570"
+      },
+      {
+        "em_Nazwa": "Suma generacji",
+        "em_Czas odczytu": "21:10:55",
+        "em_P": "0",
+        "em_kWh": "8161.390"
+      },
+      {
+        "em_Nazwa": "Zapotrzebowanie",
+        "em_Czas odczytu": "21:04:23",
+        "em_P": "6637",
+        "em_kWh": "19667.096"
+      },
+      {
+        "em_Nazwa": "Autokonsumpcja",
+        "em_Czas odczytu": "21:04:23",
+        "em_P": "0",
+        "em_kWh": "3661.908"
+      }
+    ]
+  },
+  "18b20": {
+    "ds18b20read": [
+      {
+        "s_ds18b20nr": "0",
+        "s_ds18b20a": "293c01d0758fbc28",
+        "s_ds18b20n": "APL T zew.1",
+        "s_ds18b20i": "3",
+        "s_ds18b20p": "16",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "5.06",
+        "s_ds18b20t": "21:10:56",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "1",
+        "s_ds18b20a": "343c01d075558228",
+        "s_ds18b20n": "APL CWU Ts",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "22",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "16.44",
+        "s_ds18b20t": "21:10:57",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "2",
+        "s_ds18b20a": "cd0121a102d0ce28",
+        "s_ds18b20n": "APL CWU Zas",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "62",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "38.62",
+        "s_ds18b20t": "21:10:58",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "3",
+        "s_ds18b20a": "1b0121a0f39c4628",
+        "s_ds18b20n": "APL piwnica",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "67",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "15.62",
+        "s_ds18b20t": "21:10:59",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "4",
+        "s_ds18b20a": "9e0121a0f067f228",
+        "s_ds18b20n": "APL Dom G",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "15",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "18.50",
+        "s_ds18b20t": "21:11:00",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "5",
+        "s_ds18b20a": "4e0121a10631ad28",
+        "s_ds18b20n": "APL Dom D",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "66",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "18.56",
+        "s_ds18b20t": "21:11:01",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "6",
+        "s_ds18b20a": "e0121a1020da828",
+        "s_ds18b20n": "APL Spizarka",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "31",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "11.44",
+        "s_ds18b20t": "21:11:02",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "7",
+        "s_ds18b20a": "740121a0f8ba8628",
+        "s_ds18b20n": "APL PC zas",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "11",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "15.62",
+        "s_ds18b20t": "21:11:02",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "8",
+        "s_ds18b20a": "3b01215cf66f5928",
+        "s_ds18b20n": "APL Sofar Rad",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "34",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "16.06",
+        "s_ds18b20t": "21:11:03",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "9",
+        "s_ds18b20a": "ec01215d083b7628",
+        "s_ds18b20n": "APL CWU Tg",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "57",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "38.06",
+        "s_ds18b20t": "21:11:04",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      },
+      {
+        "s_ds18b20nr": "10",
+        "s_ds18b20a": "2501215cef2a8428",
+        "s_ds18b20n": "APL CWU Td",
+        "s_ds18b20i": "4",
+        "s_ds18b20p": "49",
+        "s_ds18b20c": "0.00",
+        "s_ds18b20v": "10.94",
+        "s_ds18b20t": "21:11:05",
+        "s_ds18b20e": "OK",
+        "s_ds18b20ec": "0"
+      }
+    ]
+  },
+  "switch": {
+    "swlocal": [
+      {
+        "nr": "SW0",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      },
+      {
+        "nr": "SW1",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      },
+      {
+        "nr": "SW2",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      },
+      {
+        "nr": "SW3",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      },
+      {
+        "nr": "SW4",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      },
+      {
+        "nr": "SW5",
+        "rnm": "                                               ",
+        "rmtctl": "0",
+        "ron": "0",
+        "rtm": "1970-01-01 01:00:00"
+      }
+    ],
+    "swrmt": [],
+    "analog": [],
+    "lua": [
+      {
+        "nr": "0",
+        "luam": ""
+      },
+      {
+        "nr": "1",
+        "luam": ""
+      }
+    ]
+  }
+}
