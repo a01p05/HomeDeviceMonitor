@@ -18,6 +18,10 @@ namespace HomeDeviceMonitor.API.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get wather ...APL
+        /// </summary>
+        /// <returns></returns>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
