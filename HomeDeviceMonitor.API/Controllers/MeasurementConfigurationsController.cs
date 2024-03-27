@@ -4,10 +4,14 @@
 
 namespace HomeDeviceMonitor.API.Controllers
 {
-    [Route("api/v1/Devices/{deviceId}/[controller]")]
-    [ApiController]
+    /// <summary>
+    /// MeasurementConfigurations - insert/update/delete - off, moved to device
+    /// </summary>
+    //[Route("api/v1/Devices/{deviceId}/[controller]")]
+    //[ApiController]
     public class MeasurementConfigurationsController : ControllerBase
     {
+        /*
         // GET: api/<MeasurementConfigurationsController>
         [HttpGet]
         public IEnumerable<string> Get(int deviceId)
@@ -39,5 +43,6 @@ namespace HomeDeviceMonitor.API.Controllers
         public void Delete(int deviceId, int measurementConfigurationId)
         {
         }
+        */
     }
 }

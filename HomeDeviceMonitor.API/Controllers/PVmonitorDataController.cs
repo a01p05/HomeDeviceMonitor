@@ -10,6 +10,9 @@ namespace HomeDeviceMonitor.API.Controllers
     {
         // GET: api/<PVmonitorDataController>
         [HttpGet("pvmonitorIp")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public IEnumerable<string> Get(string pvmonitorIp)
         {
             return new string[] { "value1", "value2" };

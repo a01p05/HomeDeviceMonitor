@@ -4,10 +4,14 @@
 
 namespace HomeDeviceMonitor.API.Controllers
 {
-    [Route("api/v1/[controller]")]
-    [ApiController]
+    /// <summary>
+    /// DeviceHosts - insert/update/delete - off, moved to device
+    /// </summary>
+    //[Route("api/v1/[controller]")]
+    //[ApiController]
     public class DeviceHostsController : ControllerBase
     {
+        /*
         // GET: api/<DeviceHostsController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -39,5 +43,6 @@ namespace HomeDeviceMonitor.API.Controllers
         public void Delete(int hostId)
         {
         }
+        */
     }
 }
