@@ -3,11 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HomeDeviceMonitor.API.Controllers
 {
-    [Route("api/hc")]
-    [ApiController]
-    [EnableCors("TmpForAllOrigins")]
+    //[Route("api/hc")]
+    //[ApiController]
+    //[EnableCors("TmpForAllOrigins")]
     public class HealthChecksController : ControllerBase
     {
+        /*
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -16,5 +17,6 @@ namespace HomeDeviceMonitor.API.Controllers
         {
             return "HealthChecks";
         }
+        */
     }
 }

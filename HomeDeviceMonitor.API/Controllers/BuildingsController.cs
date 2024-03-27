@@ -2,17 +2,17 @@
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace HomeDeviceMonitor.API.Controllers
+namespace HomeHouseMonitor.API.Controllers
 {
     /// <summary>
-    /// Devices - insert/update/delete
+    /// Buildings - the place where the Buildings are located
     /// </summary>
     /// <returns></returns>
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class DevicesController : ControllerBase
+    public class BuildingsController : ControllerBase
     {
-        // GET: api/<DevicesController>
+        // GET: api/<BuildingsController>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -22,17 +22,17 @@ namespace HomeDeviceMonitor.API.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<DevicesController>/5
-        [HttpGet("{deviceId}")]
+        // GET api/<BuildingsController>/5
+        [HttpGet("{buildingId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public string Get(int deviceId)
+        public string Get(int buildingId)
         {
             return "value";
         }
 
-        // POST api/<DevicesController>
+        // POST api/<BuildingsController>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -42,32 +42,32 @@ namespace HomeDeviceMonitor.API.Controllers
         {
         }
 
-        // PUT api/<DevicesController>/5
-        [HttpPut("{deviceId}")]
+        // PUT api/<BuildingsController>/5
+        [HttpPut("{buildingId}")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public void Put(int deviceId, [FromBody] string value)
+        public void Put(int buildingId, [FromBody] string value)
         {
         }
 
-        [HttpPatch("{deviceId}")]
+        [HttpPatch("{buildingId}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public void Patch(int deviceId, [FromBody] string value)
+        public void Patch(int buildingId, [FromBody] string value)
         {
         }
 
-        // DELETE api/<DevicesController>/5
-        [HttpDelete("{deviceId}")]
+        // DELETE api/<BuildingsController>/5
+        [HttpDelete("{buildingId}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public void Delete(int deviceId)
+        public void Delete(int buildingId)
         {
         }
     }
