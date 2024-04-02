@@ -15,7 +15,7 @@ namespace HomeDeviceMonitor.Domain.Entities
         public string City { get; set; }
         public string Code { get; set; }
         public string Country { get; set; }
-        public GeoCoordinate Location { get; set; }
+        public GeoCoordinate? Location { get; set; }
         public int BuildingId { get; set; }
         public Building Building { get; set; }
     }

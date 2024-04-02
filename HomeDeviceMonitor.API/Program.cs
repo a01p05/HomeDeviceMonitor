@@ -1,4 +1,8 @@
+using HomeDeviceMonitor.Infrastructure;
+using HomeDeviceMonitor.Persistance;
+
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddCors(options =>
@@ -8,6 +12,8 @@ builder.Services.AddCors(options =>
             builder.AllowAnyOrigin();
         })
     );
+builder.Services.AddInfrastructure(configuration);
+builder.Services.AddPersistance(configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
