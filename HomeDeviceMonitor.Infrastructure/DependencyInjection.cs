@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using HomeDeviceMonitor.Application.Interfaces;
+using HomeDeviceMonitor.Application.Common.Interfaces;
 using HomeDeviceMonitor.Infrastructure.FileStore;
 using HomeDeviceMonitor.Infrastructure.Services;
 using HomeDeviceMonitor.Infrastructure.ExternalAPI.PVmonitor;

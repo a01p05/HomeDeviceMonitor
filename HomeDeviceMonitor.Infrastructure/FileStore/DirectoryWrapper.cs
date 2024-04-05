@@ -1,4 +1,4 @@
-﻿using HomeDeviceMonitor.Application.Interfaces;
+﻿using HomeDeviceMonitor.Application.Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

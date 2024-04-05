@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeDeviceMonitor.Application.Interfaces
+namespace HomeDeviceMonitor.Application.Common.Interfaces
 {
     public interface IPVmonitorClient
     {

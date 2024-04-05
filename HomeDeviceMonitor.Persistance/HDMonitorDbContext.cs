@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using HomeDeviceMonitor.Application.Interfaces;
+using HomeDeviceMonitor.Application.Common.Interfaces;
 using HomeDeviceMonitor.Domain.Common;
 using HomeDeviceMonitor.Domain.Entities;
 using HomeDeviceMonitor.Domain;
@@ -12,7 +12,7 @@ using System.Reflection;
 
 namespace HomeDeviceMonitor.Persistance
 {
-    public class HDMonitorDbContext : DbContext
+    public class HDMonitorDbContext : DbContext, IHDMonitorDbContext
     {
         private readonly IDateTime _dateTime;
         public HDMonitorDbContext(DbContextOptions<HDMonitorDbContext> options) : base(options)
