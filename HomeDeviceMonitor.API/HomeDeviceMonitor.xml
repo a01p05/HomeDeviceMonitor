@@ -4,6 +4,12 @@
         <name>HomeDeviceMonitor.API</name>
     </assembly>
     <members>
+        <member name="T:HomeDeviceMonitor.API.Controllers.BuildingsController">
+            <summary>
+            Buildings - the place where the Buildings are located
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:HomeDeviceMonitor.API.Controllers.DeviceHostsController">
             <summary>
             DeviceHosts - insert/update/delete - off, moved to device
@@ -19,12 +25,6 @@
             <summary>
             MeasurementConfigurations - insert/update/delete - off, moved to device
             </summary>
-        </member>
-        <member name="T:HomeHouseMonitor.API.Controllers.BuildingsController">
-            <summary>
-            Buildings - the place where the Buildings are located
-            </summary>
-            <returns></returns>
         </member>
     </members>
 </doc>

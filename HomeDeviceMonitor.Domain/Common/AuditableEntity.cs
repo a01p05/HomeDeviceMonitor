@@ -12,6 +12,5 @@ namespace HomeDeviceMonitor.Domain.Common
         public DateTime? Modified { get; set; }
         public string? InactivatedBy { get; set; }
         public DateTime? Inactivated { get; set; }
-        public int StatusId { get; set; }
     }
 }

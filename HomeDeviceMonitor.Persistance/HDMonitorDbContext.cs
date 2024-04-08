@@ -45,6 +45,7 @@ namespace HomeDeviceMonitor.Persistance
                     case EntityState.Added:
                         entryBase.Entity.CreatedBy = string.Empty;
                         entryBase.Entity.Created = _dateTime.Now;
+                        entryBase.Entity.StatusId = 1;
                         break;
                     case EntityState.Modified:
                         entry.ModifiedBy = string.Empty;
