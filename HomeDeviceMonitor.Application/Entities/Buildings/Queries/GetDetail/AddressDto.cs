@@ -1,4 +1,6 @@
-﻿using HomeDeviceMonitor.Domain.Common;
+﻿using AutoMapper;
+using HomeDeviceMonitor.Application.Common.Mappings;
+using HomeDeviceMonitor.Domain.Entities;
 using HomeDeviceMonitor.Domain.ValueObject;
 using System;
 using System.Collections.Generic;
@@ -6,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeDeviceMonitor.Domain.Entities
+namespace HomeDeviceMonitor.Application.Entities.Buildings.Queries.GetDetail
 {
-    public class Address: AuditableEntity
+    public class AddressDto : IMapFrom<Address>
     {
         public string Street { get; set; }
         public string No { get; set; }
@@ -16,7 +18,10 @@ namespace HomeDeviceMonitor.Domain.Entities
         public string Code { get; set; }
         public string Country { get; set; }
         public GeoCoordinate? Location { get; set; }
-        public int BuildingId { get; set; }
-        public Building Building { get; set; }
+
+        public void Mapping(Profile profile)
+        {
+            profile.CreateMap<Address, AddressDto>();
+        }
     }
 }

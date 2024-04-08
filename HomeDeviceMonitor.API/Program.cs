@@ -1,51 +1,36 @@
-var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddCors(options =>
-    options.AddPolicy(name: "TmpForAllOrigins",
-        builder =>
-        {
-            builder.AllowAnyOrigin();
-        })
-    );
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
+using Serilog;
+
+namespace HomeDeviceMonitor.API
 {
-    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    public class Program
     {
-        Title = "HomeDeviceMonitor",
-        Version = "v1",
-        Description = "Home appliance tracking and monitoring system",
-        Contact = new Microsoft.OpenApi.Models.OpenApiContact
+        public static void Main(string[] args)
         {
-            Name = "Adam P",
-            Email = "a01p05@gmail.com"
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+            try
+            {
+                Log.Information("HomeDeviceMonitor: application is starting up");
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch (Exception) 
+            {
+                Log.Fatal("HomeDeviceMonitor: application could not start up");
+            }
+            finally 
+            {
+                Log.CloseAndFlush();
+            }
         }
-    });
-    var filePath = Path.Combine(AppContext.BaseDirectory, "HomeDeviceMonitor.xml");
-    c.IncludeXmlComments(filePath);
-});
-builder.Services.AddHealthChecks();
 
-var app = builder.Build(); 
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
+        private static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+            .UseSerilog()
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+    }
 }
-app.UseHealthChecks("/hc");
-app.UseSwagger();
-app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseCors();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

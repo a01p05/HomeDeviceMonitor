@@ -7,7 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HomeDeviceMonitor.Domain\HomeDeviceMonitor.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Entities\Buildings\Commands\Update\" />
+    <Folder Include="Entities\Devices\Queries\GetDetail\" />
+    <Folder Include="Entities\Devices\Queries\GetCollection\" />
+    <Folder Include="Entities\Pattern\Commands\Create\" />
+    <Folder Include="Entities\Pattern\Commands\Delete\" />
+    <Folder Include="Entities\Pattern\Commands\Update\" />
+    <Folder Include="Entities\Devices\Commands\Create\" />
+    <Folder Include="Entities\Devices\Commands\Delete\" />
+    <Folder Include="Entities\Devices\Commands\Update\" />
+    <Folder Include="Entities\Pattern\Queries\GetCollection\" />
+    <Folder Include="Entities\Pattern\Queries\GetDetail\" />
   </ItemGroup>
 
 </Project>

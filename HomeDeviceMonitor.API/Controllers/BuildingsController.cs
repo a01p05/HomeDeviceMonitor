@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HomeDeviceMonitor.API.Controllers;
+using HomeDeviceMonitor.Application.Entities.Buildings.Commands.Create;
+using HomeDeviceMonitor.Application.Entities.Buildings.Queries.GetDetail;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace HomeHouseMonitor.API.Controllers
+namespace HomeDeviceMonitor.API.Controllers
 {
     /// <summary>
     /// Buildings - the place where the Buildings are located
     /// </summary>
     /// <returns></returns>
-    [Route("api/v1/[controller]")]
-    [ApiController]
-    public class BuildingsController : ControllerBase
+    [Route("api/buildings")]
+    public class BuildingsController : BaseController
     {
         // GET: api/<BuildingsController>
         [HttpGet]
@@ -27,9 +29,10 @@ namespace HomeHouseMonitor.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public string Get(int buildingId)
+        public async Task<ActionResult<BuildingDetailVm>> Get(int buildingId)
         {
-            return "value";
+            var vm = await Mediator.Send(new GetBuildingDetailQuery() { BuildingId = buildingId });
+            return vm;
         }
 
         // POST api/<BuildingsController>
@@ -38,8 +41,10 @@ namespace HomeHouseMonitor.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post(CreateBuildingCommand command)
         {
+            var result = await Mediator.Send(command);
+            return Ok(result);
         }
 
         // PUT api/<BuildingsController>/5
