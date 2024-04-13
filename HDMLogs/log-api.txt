@@ -1,0 +1,91 @@
+04/12/2024 21:35:19 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 21:37:12 +02:00 HTTP "GET" "/favicon.ico" responded 404 in 34.7716 ms
+04/12/2024 22:28:56 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 22:28:59 +02:00 HomeDeviceMonitor: application could not start up
+04/12/2024 22:31:12 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 22:31:14 +02:00 HomeDeviceMonitor: application could not start up
+04/12/2024 22:36:10 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 22:36:12 +02:00 HomeDeviceMonitor: application could not start up
+04/12/2024 22:37:05 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 22:39:21 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 32.2932 ms
+04/12/2024 22:39:57 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" GetBuildingDetailQuery { BuildingId: 1 }
+04/12/2024 22:40:02 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" (5267 miliseconds) GetBuildingDetailQuery { BuildingId: 1 }
+04/12/2024 22:40:02 +02:00 HTTP "GET" "/api/buildings/1" responded 200 in 5386.4246 ms
+04/12/2024 22:41:40 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" GetBuildingDetailQuery { BuildingId: 5 }
+04/12/2024 22:41:40 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" (45 miliseconds) GetBuildingDetailQuery { BuildingId: 5 }
+04/12/2024 22:41:40 +02:00 HTTP "GET" "/api/buildings/5" responded 200 in 60.9672 ms
+04/12/2024 22:43:24 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 0.6427 ms
+04/12/2024 22:45:21 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" GetBuildingDetailQuery { BuildingId: 1 }
+04/12/2024 22:45:22 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" (89 miliseconds) GetBuildingDetailQuery { BuildingId: 1 }
+04/12/2024 22:45:22 +02:00 HTTP "GET" "/api/buildings/1" responded 200 in 100.4371 ms
+04/12/2024 22:56:44 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 22:57:00 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 32.7690 ms
+04/12/2024 23:10:37 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:19:36 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:29:29 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:39:09 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:45:51 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:46:39 +02:00 HomeDeviceMonitor: application is starting up
+04/12/2024 23:48:41 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:04:22 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:10:57 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:31:30 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:34:56 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:37:07 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:39:13 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:40:52 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:42:57 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:43:42 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 35.3411 ms
+04/13/2024 00:44:38 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 3.1835 ms
+04/13/2024 00:46:22 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 00:47:31 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 30.9260 ms
+04/13/2024 12:05:56 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 12:07:53 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 12:10:48 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 12:11:24 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 12:12:41 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 12:13:25 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 14:49:26 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:00:33 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:02:08 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:05:33 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:05:45 +02:00 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - HomeDeviceMonitor.API.Controllers.BuildingsController.Get (HomeDeviceMonitor.API). See inner exception
+ ---> System.ArgumentException: An item with the same key has already been added. Key: 403
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at HomeDeviceMonitor.API.AuthorizeCheckOperationFilter.Apply(OpenApiOperation operation, OperationFilterContext context) in E:\aplresources\szkoladotneta\webapi\code\HomeDeviceMonitor\HomeDeviceMonitor.API\AuthorizeCheckOperationFilter.cs:line 17
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+04/13/2024 15:06:43 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:07:52 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:29:18 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:30:48 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:32:20 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 25.4359 ms
+04/13/2024 15:35:21 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:39:57 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 15:41:12 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 67.5780 ms
+04/13/2024 15:41:59 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 8.9202 ms
+04/13/2024 15:42:48 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 16:01:39 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 16:02:20 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 16:08:34 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 16:09:03 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 30.9779 ms
+04/13/2024 16:09:49 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 16:10:05 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 36.2318 ms
+04/13/2024 16:10:35 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" GetBuildingDetailQuery { BuildingId: 1 }
+04/13/2024 16:10:41 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" (6160 miliseconds) GetBuildingDetailQuery { BuildingId: 1 }
+04/13/2024 16:10:41 +02:00 HTTP "GET" "/api/buildings/1" responded 200 in 6247.7119 ms
+04/13/2024 21:39:20 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 21:40:35 +02:00 HTTP "GET" "/api/buildings/1" responded 401 in 31.1663 ms
+04/13/2024 21:46:00 +02:00 HomeDeviceMonitor: application is starting up
+04/13/2024 21:46:33 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" GetBuildingDetailQuery { BuildingId: 1 }
+04/13/2024 21:46:39 +02:00 HomeDeviceMonitor Request: "GetBuildingDetailQuery" (5463 miliseconds) GetBuildingDetailQuery { BuildingId: 1 }
+04/13/2024 21:46:39 +02:00 HTTP "GET" "/api/buildings/1" responded 200 in 5610.5573 ms

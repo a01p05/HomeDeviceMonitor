@@ -15,12 +15,14 @@ namespace HomeDeviceMonitor.Persistance
     public class HDMonitorDbContext : DbContext, IHDMonitorDbContext
     {
         private readonly IDateTime _dateTime;
+        private readonly ICurrentUserService _currentUserService;
         public HDMonitorDbContext(DbContextOptions<HDMonitorDbContext> options) : base(options)
         { 
         }
-        public HDMonitorDbContext(DbContextOptions<HDMonitorDbContext> options, IDateTime dateTime) : base(options)
+        public HDMonitorDbContext(DbContextOptions<HDMonitorDbContext> options, IDateTime dateTime, ICurrentUserService currentUserService) : base(options)
         {
             _dateTime = dateTime;
+            _currentUserService = currentUserService;
         }
 
         public DbSet<Building> Buildings { get; set; }
@@ -43,18 +45,18 @@ namespace HomeDeviceMonitor.Persistance
                 switch (entryBase.State)
                 {
                     case EntityState.Added:
-                        entryBase.Entity.CreatedBy = string.Empty;
+                        entryBase.Entity.CreatedBy = _currentUserService.Email;
                         entryBase.Entity.Created = _dateTime.Now;
                         entryBase.Entity.StatusId = 1;
                         break;
                     case EntityState.Modified:
-                        entry.ModifiedBy = string.Empty;
+                        entry.ModifiedBy = _currentUserService.Email;
                         entry.Modified = _dateTime.Now;
                         break;
                     case EntityState.Deleted:
-                        entry.ModifiedBy = string.Empty;
+                        entry.ModifiedBy = _currentUserService.Email;
                         entry.Modified = _dateTime.Now;
-                        entry.InactivatedBy = string.Empty;
+                        entry.InactivatedBy = _currentUserService.Email;
                         entry.Inactivated = _dateTime.Now;
                         entry.StatusId = 0;
                         entryBase.State = EntityState.Modified;
